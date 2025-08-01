@@ -13,7 +13,7 @@ class Dimension:
     def get_cubic_area(self) -> int:
         return self.length * self.width * self.height
 
-with open("data/day_2_input.txt", "r") as data_file:
+with open('data/day_2_input.txt', 'r') as data_file:
     order_total: int = 0
     while True:
         line = data_file.readline()
@@ -21,7 +21,7 @@ with open("data/day_2_input.txt", "r") as data_file:
             break
         current_dimension: Dimension = Dimension()
 
-        dimensions = line.strip().split("x")
+        dimensions = line.strip().split('x')
         current_dimension.length = int(dimensions[0])
         current_dimension.width = int(dimensions[1])
         current_dimension.height = int(dimensions[2])
